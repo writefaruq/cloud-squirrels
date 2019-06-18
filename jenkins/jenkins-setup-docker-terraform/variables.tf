@@ -13,16 +13,16 @@ variable "token" {
 
 variable "region" {
   description = "Digital Ocean Region"
-  default = "lon1"
+  default     = "lon1"
 }
 variable "droplet_image" {
   description = "Digital Ocean Droplet Image"
-  default = "debian-9-x64"
+  default     = "debian-9-x64"
 }
 
 variable "jenkins_droplet_size" {
   description = "Droplet size for Jenkins server"
-  default = "1gb"
+  default     = "1gb"
 }
 
 # location of the private ssh key 
@@ -31,7 +31,7 @@ variable "jenkins_droplet_size" {
 # your local machine
 variable "pvt_sshkey" {
   description = "Location of the local private ssh key"
-  default = "~/.ssh/id_rsa"
+  default     = "~/.ssh/id_rsa"
 }
 
 # ssh_fingerprint should be exported in the local
